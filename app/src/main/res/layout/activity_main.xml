@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/firstcurrency"
+        android:layout_width="153dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/background"
+        android:hint="  Enter currency"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="@id/spinner_1"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_1"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spinner_1"
+
+
+        android:layout_width="179dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="#6200EE"
+        android:text="Convert"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/usd"
+        android:layout_width="200dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:textSize="25dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/background"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/pk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/USD"
+        android:layout_width="96dp"
+        android:layout_height="54dp"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/background"
+        android:paddingLeft="15dp"
+        android:text="USD: "
+        android:textColor="#000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/usd"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/R"
+        android:layout_width="96dp"
+        android:layout_height="54dp"
+        android:background="@drawable/background"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="YUAN:"
+        android:textColor="#000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Yuan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RS"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/RS"
+        android:layout_width="96dp"
+        android:layout_height="54dp"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/background"
+        android:paddingLeft="25dp"
+        android:text="RS "
+        android:textColor="#000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pk"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pk"
+        android:layout_width="200dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="40dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:textSize="25dp"
+        android:background="@drawable/background"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/Yuan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Yuan"
+        android:layout_width="200dp"
+        android:layout_height="54dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:textSize="25dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/background"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

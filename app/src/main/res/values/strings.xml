@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">currency convertor</string>
+    <array name="curency">
+        <item >PKRupee</item>
+        <item >US$</item>
+        <item >Yuan</item>
+    </array>
+</resources>
